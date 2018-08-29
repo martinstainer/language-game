@@ -44,11 +44,9 @@ class PigLatinStrategy implements ILanguageGameStrategyInterface
 	 */
 	public function translate(string $word): string
 	{
-
 		if (strlen($word) < 2) {
 			throw new InvalidArgumentException('Argument has to be a word.');
 		}
-
 		/** @var string $firstLetter */
 		$firstLetter = $word[0];
 
@@ -65,8 +63,10 @@ class PigLatinStrategy implements ILanguageGameStrategyInterface
 			) {
 				$preSuffix .= $word[$charPosition++];
 			}
+
 			return substr($word, $charPosition) . '-' . $preSuffix . self::SUFFIX;
 		}
+
 		return '';
 	}
 

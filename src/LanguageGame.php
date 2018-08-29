@@ -9,6 +9,8 @@ class LanguageGame
 	/** @var ILanguageGameStrategyInterface $game */
 	private $game;
 
+
+
 	/**
 	 * LanguageGame constructor.
 	 *
@@ -20,11 +22,13 @@ class LanguageGame
 	}
 
 
+
 	/**
 	 * @param string $input
 	 * @return string
 	 */
-	public function play(string $input) : string {
+	public function play(string $input): string
+	{
 		return $this->game->translate($input);
 	}
 

@@ -10,7 +10,7 @@ PHP 7.1
 
 clone the repository,
 run composer update,
-set directory temp writable,
+create directory temp in and make it writable
 
 ## Test
 
