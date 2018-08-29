@@ -1,0 +1,10 @@
+{
+    "require": {
+        "nette/di": "^2.4",
+        "tracy/tracy": "^2.5",
+        "nette/robot-loader": "^3.0"
+    },
+    "require-dev": {
+        "nette/tester": "^2.0"
+    }
+}
